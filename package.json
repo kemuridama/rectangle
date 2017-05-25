@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "author": "Ryo Ochiai <ryo.ochiai@kemuridama.jp>",
   "private": true,
+  "main": "rectangle.js",
   "scripts": {
     "clean": "rm -rf ./dist && rm -rf ./storybook",
     "build": "npm run clean && npm run lint && webpack --config webpack.config.js",
