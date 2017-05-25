@@ -1,0 +1,93 @@
+.p {
+
+  position: relative;
+  margin-top: 1rem;
+  border: 1px solid $border-color;
+  border-radius: .3rem;
+  box-shadow: 0 3px 10px rgba($color-black, .1);
+  background-color: $color-white;
+
+  @at-root {
+
+    #{&}__header,
+    #{&}__body,
+    #{&}__footer {
+
+      margin: 0;
+      padding: 1rem 1.5rem;
+
+    }
+
+    #{&}__header {
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+
+      @at-root {
+
+        #{&}--with-border {
+          border-bottom: 1px solid $border-color;
+        }
+
+        #{&}--without-bottom-padding {
+          padding-bottom: 0;
+        }
+
+      }
+
+    }
+
+    #{&}__body {
+
+      @at-root {
+
+        #{&}--without-padding {
+          padding: 0;
+        }
+
+      }
+
+    }
+
+    #{&}__footer {
+
+      @at-root {
+
+        #{&}--with-border {
+          border-top: 1px solid $border-color;
+        }
+
+        #{&}--without-top-padding {
+          padding-top: 0;
+        }
+
+      }
+
+    }
+
+    #{&}__toolbox {
+
+      float: right;
+
+      button {
+        line-height: 1;
+        display: inline-block;
+        border: 0;
+        background: transparent;
+        outline: 0;
+        color: #97a0b3;
+        cursor: pointer;
+        &:hover { color: $color-black; }
+      }
+
+    }
+
+  }
+
+}

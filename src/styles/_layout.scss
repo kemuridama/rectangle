@@ -1,0 +1,58 @@
+.container {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 ($gutter / 2);
+}
+
+.row {
+  @include flex-container;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 ($gutter / -2);
+}
+
+@each $breakpoint in map-keys($breakpoints) {
+
+  @for $i from 1 through $columns {
+
+    .col-#{$breakpoint}-#{$i} {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 ($gutter / 2);
+      &:last-child { margin-bottom: 0; }
+    }
+
+  }
+
+  @include media-up($breakpoint) {
+
+    @for $i from 1 through $columns {
+
+      .col-#{$breakpoint}-#{$i} {
+        @include flex-item(percentage($i / $columns));
+        position: relative;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        padding: 0 ($gutter / 2);
+      }
+
+    }
+
+    @for $i from 0 through ($columns - 1) {
+
+      .offset-#{$breakpoint}-#{$i} {
+        margin-left: percentage($i / $columns);
+      }
+
+      .reverse-offset-#{$breakpoint}-#{$i} {
+        margin-right: percentage($i / $columns);
+      }
+
+    }
+
+  }
+
+}

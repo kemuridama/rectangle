@@ -1,0 +1,35 @@
+.list {
+
+  margin: .5rem 0;
+  padding-left: 1.5rem;
+
+  > li {
+    + li { margin-top: .3rem; }
+  }
+
+  @at-root {
+
+    #{&}--unstyled {
+      padding: 0;
+      list-style: none;
+    }
+
+    #{&}--inline {
+
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        + li { margin-left: .5rem; }
+      }
+
+    }
+
+    #{&}--without-margin {
+      margin: 0;
+    }
+
+  }
+
+}

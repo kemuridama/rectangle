@@ -1,0 +1,83 @@
+.btn {
+
+  display: inline-block;
+  outline: 0;
+  border-width: 1px;
+  border-style: solid;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  cursor: pointer;
+  transition: all .2s linear;
+  + #{&} { margin-left: .5rem; }
+
+  @include button-color($background-color, $color-black);
+  @include button-size(.5rem 1rem, 1.25, .25rem, 1rem);
+
+  @at-root {
+
+    // Colors
+    @each $name, $color in $button-colors {
+      #{&}--#{$name} {
+        @include button-color(
+          map-get($color, background-color),
+          map-get($color, color)
+        )
+      }
+    }
+
+    // Outline Colors
+    @each $name, $color in $button-outline-colors {
+      #{&}--#{$name}-o {
+        @include button-outline-color(map-get($color, color));
+      }
+    }
+
+    // Sizes
+    @each $name, $size in $button-sizes {
+      #{&}--#{$name} {
+        @include button-size(
+          map-get($size, padding),
+          map-get($size, line-height),
+          map-get($size, border-radius),
+          map-get($size, font-size)
+        );
+      }
+    }
+
+    #{&}--toolbox {
+      line-height: 1;
+      background-color: transparent;
+      border: 0;
+      color: #97a0b3;
+    }
+
+    #{&}--text {
+      padding: 0 .25rem;
+      background-color: transparent;
+      border: 0;
+      color: inherit;
+      line-height: 1;
+      &:hover, &:active { background-color: relative; }
+    }
+
+    #{&}--disabled {
+      cursor: not-allowed;
+      pointer-events: none;
+      opacity: .65;
+    }
+
+    #{&}--block {
+      display: block;
+      width: 100%;
+      + .btn--block {
+        margin-top: .5rem;
+        margin-left: 0;
+      }
+    }
+
+  }
+
+}

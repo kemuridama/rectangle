@@ -1,0 +1,74 @@
+@function breakpoint-next($breakpoint) {
+
+  $breakpoint-keys: map-keys($breakpoints);
+  $index: index($breakpoint-keys, $breakpoint);
+  @return if($index < length($breakpoints), nth($breakpoint-keys, $index + 1), null);
+
+}
+
+@function breakpoint-min($breakpoint) {
+
+  $min: map-get($breakpoints, $breakpoint);
+  @return if($min != 0, $min, null);
+
+}
+
+@function breakpoint-max($breakpoint) {
+
+  $next: breakpoint-next($breakpoint);
+  @return if($next, breakpoint-min($next) - 1px, null);
+
+}
+
+@mixin media-up($breakpoint) {
+
+  $min: breakpoint-min($breakpoint);
+  @if $min {
+    @media screen and (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+
+}
+
+@mixin media-down($breakpoint) {
+
+  $max: breakpoint-max($breakpoint);
+  @if $max {
+    @media screen and (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+
+}
+
+@mixin media-between($lower, $upper) {
+
+  @include media-up($lower) {
+    @include media-down($upper) {
+      @content;
+    }
+  }
+
+}
+
+@mixin flex-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: space-between;
+
+}
+
+@mixin flex-item($width) {
+
+  flex: 0 0 $width;
+  max-width: $width;
+
+}

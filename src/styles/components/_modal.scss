@@ -1,0 +1,83 @@
+.modal-overlay {
+
+  @include flex-container;
+  @extend .container;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background: rgba($color-black, .6);
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.modal {
+
+  max-height: 100%;
+  padding: 0;
+  background-color: $color-white;
+  outline: 0;
+  border: 1px solid $border-color;
+  border-radius: .25rem;
+
+  @at-root {
+
+    #{&}__header,
+    #{&}__body,
+    #{&}__footer {
+
+      margin: 0;
+      padding: 1rem 1.5rem;
+
+    }
+
+    #{&}__header {
+
+      background-color: $background-color;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+
+      @at-root {
+
+        #{&}--with-border { border-bottom: 1px solid $border-color; }
+
+      }
+
+    }
+
+    #{&}__body {
+
+      @at-root {
+
+        #{&}--without-padding { padding: 0; }
+
+      }
+
+    }
+
+    #{&}__footer {
+
+      @at-root {
+
+        #{&}--with-border { border-top: 1px solid $border-color; }
+        #{&}--text-right { text-align: right; }
+
+      }
+
+    }
+
+  }
+
+}

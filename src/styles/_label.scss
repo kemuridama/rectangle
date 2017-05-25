@@ -1,0 +1,36 @@
+.lbl {
+
+  display: inline;
+  padding: .2em .6em .3em;
+  border-radius: .3rem;
+  background-color: $background-color;
+  font-size: 75%;
+  line-height: 1;
+  white-space: nowrap;
+  user-select: none;
+  cursor: default;
+  + #{&} { margin-left: .5rem; }
+
+  @at-root {
+
+    // Colors
+    @each $name, $color in $label-colors {
+      #{&}--#{$name} {
+        @include label-color(
+          map-get($color, background-color),
+          map-get($color, color)
+        )
+      }
+    }
+
+    #{&}--inline-block {
+      display: inline-block;
+    }
+
+    #{&}--block {
+      display: block;
+    }
+
+  }
+
+}

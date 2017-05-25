@@ -1,0 +1,37 @@
+.loading {
+
+  position: fixed;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba($color-black, .6);
+
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  cursor: default;
+
+  @at-root {
+
+    #{&}__message {
+
+      color: rgba($color-white, .8);
+      text-align: center;
+      line-height: 2;
+
+      @at-root {
+
+        #{&}__icon {
+          font-size: 3rem;
+        }
+
+      }
+
+    }
+
+  }
+
+}

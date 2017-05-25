@@ -1,0 +1,31 @@
+@mixin button-color($background-color, $color) {
+
+  background-color: $background-color;
+  border-color: darken($background-color, 10%);
+  color: $color;
+
+  &:hover, &:active {
+    background-color: darken($background-color, 10%);
+  }
+
+}
+
+@mixin button-outline-color($color) {
+
+  background-color: transparent;
+  border-color: $color;
+  color: $color;
+
+  &:hover, &:active {
+    background-color: $color;
+    color: $color-white;
+  }
+
+}
+
+@mixin button-size($padding, $line-height, $border-radius, $font-size) {
+  padding: $padding;
+  line-height: $line-height;
+  border-radius: $border-radius;
+  font-size: $font-size;
+}
