@@ -3,3 +3,15 @@
   height: 100%;
   overflow: hidden;
 }
+
+.clearfix {
+  @include clearfix();
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
