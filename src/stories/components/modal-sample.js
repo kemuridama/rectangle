@@ -13,7 +13,7 @@ export default class ModalSample extends React.Component {
   render() {
     const { isOpen } = this.state;
     return (
-      <div className="container">
+      <div className="con">
         <Modal name="test" className="col-md-6" isOpen={isOpen} onClose={this.handleClose.bind(this)}>
           <h3 className="modal__header">Modal</h3>
           <div className="modal__body">

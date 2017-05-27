@@ -1,9 +1,13 @@
 {
   "name": "rectangle",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Ryo Ochiai <ryo.ochiai@kemuridama.jp>",
   "private": true,
   "main": "rectangle.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/kemuridama/rectangle.git"
+  },
   "scripts": {
     "clean": "rm -rf ./dist && rm -rf ./storybook",
     "build": "npm run clean && npm run lint && webpack --config webpack.config.js",

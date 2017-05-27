@@ -5,7 +5,7 @@ export default class TableWithClickableRow extends React.Component {
   render() {
     const { onClick } = this.props;
     return (
-      <div className="container">
+      <div className="con">
         <div className="p">
           <div className="p__body p__body--without-padding">
             <table className="tbl">

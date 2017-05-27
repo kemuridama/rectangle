@@ -4,7 +4,7 @@ export default class FundamentalLayout extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="con">
         <div className="row">
           <div className="c-md-6">
             <div className="p">

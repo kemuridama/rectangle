@@ -4,7 +4,7 @@ export default class UnstyledList extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="con">
         <div className="p">
           <div className="p__body">
             <ul className="list list--unstyled">

@@ -4,7 +4,7 @@ export default class NormalTable extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="con">
         <div className="p">
           <div className="p__body p__body--without-padding">
             <table className="tbl">
