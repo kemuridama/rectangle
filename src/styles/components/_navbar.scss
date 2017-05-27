@@ -1,0 +1,47 @@
+.navbar {
+
+  height: 50px;
+  background-color: rgba($color-black, .8);
+  color: rgba($color-white, .8);
+
+  @at-root {
+
+    #{&}--fixed-top,
+    #{&}--fixed-bottom {
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 500;
+    }
+
+    #{&}--fixed-top {
+      top: 0;
+    }
+
+    #{&}--fixed-bottom {
+      bottom: 0;
+    }
+
+    #{&}__link {
+
+      display: inline-block;
+      padding: 17px 10px;
+      cursor: pointer;
+      transition: color .2s linear;
+      user-select: none;
+      &:hover { color: rgba($color-white, 1) }
+
+      @at-root {
+
+        #{&}--title {
+          float: left;
+          padding: 17px;
+        }
+
+      }
+
+    }
+
+  }
+
+}
