@@ -17,7 +17,7 @@
 
   @for $i from 1 through $columns {
 
-    .col-#{$breakpoint}-#{$i} {
+    .c-#{$breakpoint}-#{$i} {
       position: relative;
       box-sizing: border-box;
       width: 100%;
@@ -31,7 +31,8 @@
 
     @for $i from 1 through $columns {
 
-      .col-#{$breakpoint}-#{$i} {
+      // Column
+      .c-#{$breakpoint}-#{$i} {
         @include flex-item(percentage($i / $columns));
         position: relative;
         box-sizing: border-box;
@@ -43,11 +44,13 @@
 
     @for $i from 0 through ($columns - 1) {
 
-      .offset-#{$breakpoint}-#{$i} {
+      // Offset
+      .o-#{$breakpoint}-#{$i} {
         margin-left: percentage($i / $columns);
       }
 
-      .reverse-offset-#{$breakpoint}-#{$i} {
+      // Reverse offset
+      .ro-#{$breakpoint}-#{$i} {
         margin-right: percentage($i / $columns);
       }
 
