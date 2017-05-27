@@ -4,6 +4,14 @@
   overflow: hidden;
 }
 
-.text-center {
-  text-align: center;
+.clearfix {
+  @include clearfix();
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
 }
