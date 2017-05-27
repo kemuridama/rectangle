@@ -19,7 +19,7 @@ export default class Navbar extends React.Component {
 
     return (
       <div className={`navbar ${className || ''}`}>
-        <div className="container">
+        <div className="con">
           {title}
           <nav className="pull-left">
             <ul className="list list--inline list--without-margin">

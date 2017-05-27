@@ -32,7 +32,7 @@ export default class NavbarFixedTopSample extends React.Component {
     ];
 
     return (
-      <div className="container">
+      <div className="con">
         <Navbar
           title={this.renderTitle()}
           menuList={menuList}

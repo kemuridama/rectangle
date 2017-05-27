@@ -13,7 +13,7 @@ export default class LoadingSample extends React.Component {
   render() {
     const { isActive } = this.state;
     return (
-      <div className="container">
+      <div className="con">
         <Loading isActive={isActive} />
         <div className="p">
           <div className="p__body">

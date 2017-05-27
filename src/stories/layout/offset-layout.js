@@ -4,7 +4,7 @@ export default class OffsetLayout extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="con">
         <div className="row">
           <div className="c-md-4 o-md-2">
             <div className="p">
