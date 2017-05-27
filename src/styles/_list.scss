@@ -20,8 +20,14 @@
       list-style: none;
 
       li {
+
         display: inline-block;
-        + li { margin-left: .5rem; }
+
+        + li {
+          margin-top: 0;
+          margin-left: .5rem;
+        }
+
       }
 
     }
