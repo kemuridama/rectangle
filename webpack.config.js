@@ -5,7 +5,8 @@ module.exports = {
   context: __dirname + '/src/components',
   entry: {
     loading: './loading.js',
-    modal: './modal.js'
+    modal: './modal.js',
+    navbar: './navbar.js'
   },
   output: {
     path: __dirname + '/dist',
