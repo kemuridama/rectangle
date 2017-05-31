@@ -19,6 +19,14 @@ export default class Form extends React.Component {
                   <input type="text" className="textbox" id="textbox" placeholder="Text Box" />
                 </div>
                 <div className="input-field">
+                  <label className="input-field__label" htmlFor="selectbox">Select Box</label>
+                  <select className="selectbox" id="selectbox">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </select>
+                </div>
+                <div className="input-field">
                   <label className="input-field__label">Radio Button</label>
                   <ul className="list list--inline">
                     <li><label className="radio__label"><input type="radio" name="radio" className="radio" /> Radio Button 1</label></li>
