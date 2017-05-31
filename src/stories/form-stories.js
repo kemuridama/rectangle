@@ -5,6 +5,7 @@ import '../styles.scss';
 import InputField from './form/input-field';
 import Checkbox from './form/checkbox';
 import RadioButton from './form/radio-button';
+import Selectbox from './form/selectbox';
 import Form from './form/form';
 
 /* global module */
@@ -17,6 +18,9 @@ storiesOf('Form', module)
   })
   .add('Radio Button', () => {
     return <RadioButton onChange={action('change')} />;
+  })
+  .add('Selectbox', () => {
+    return <Selectbox onChange={action('change')} />;
   })
   .add('Form', () => {
     return <Form />;
