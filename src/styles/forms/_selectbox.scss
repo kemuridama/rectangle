@@ -1,0 +1,12 @@
+.selectbox {
+
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  border: 1px solid $border-color;
+  border-radius: .25rem;
+  background-color: transparent;
+  outline: 0;
+  &:focus { border-color: $outline-color; }
+
+}
