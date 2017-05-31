@@ -1,0 +1,48 @@
+.checkbox {
+
+  position: relative;
+  display: inline-block;
+  visibility: hidden;
+  width: 1.2em;
+  height: 1.2em;
+  margin-top: -.1em;
+  cursor: pointer;
+  font-family: 'FontAwesome';
+  text-align: center;
+  vertical-align: middle;
+
+  &:before {
+    position: absolute;
+    display: block;
+    visibility: visible;
+    box-sizing: border-box;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $border-color;
+    border-radius: .3rem;
+    transition: all .2s linear;
+    content: '';
+  }
+
+  &:after {
+    visibility: visible;
+    transition: all .2s linear;
+    color: transparent;
+    vertical-align: middle;
+    content: '\f00c';
+  }
+
+  &:hover:before { border-color: $outline-color; }
+  &:checked:after { color: $color-black; }
+
+  @at-root {
+
+    #{&}__label {
+      user-select: none;
+      cursor: pointer;
+    }
+
+  }
+
+}

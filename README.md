@@ -6,7 +6,7 @@ Rectangle is a common UI package including styles and React components.
 
 ### CSS Styles
 
-* Grid layout (.container, .row, .c, .o, .ro)
+* Grid layout (.con, .row, .c, .o, .ro)
 * Panel (.p)
 * Button (.btn)
 * Label (.lbl)
@@ -30,6 +30,8 @@ $ npm i -S git+ssh://git@github.com:kemuridama/rectangle.git
 ```
 $ npm run storybook
 ```
+
+Storybook is running at 6001 port.
 
 ## License
 

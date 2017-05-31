@@ -1,0 +1,32 @@
+.input-field {
+
+  + .input-field { margin-top: .5rem; }
+
+  @at-root {
+
+    #{&}__label {
+      display: block;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      user-select: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #{&}--vertical {
+
+      @include flex-container;
+
+      @at-root {
+
+        #{&}__label {
+          text-align: right;
+        }
+
+      }
+
+    }
+
+  }
+
+}

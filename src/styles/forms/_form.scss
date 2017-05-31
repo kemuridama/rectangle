@@ -1,0 +1,33 @@
+.form {
+
+  position: relative;
+
+  @at-root {
+
+    #{&}__header {
+
+      padding: 1rem 1.5rem 0;
+
+      @at-root {
+
+        #{&}__text {
+          margin: 0;
+        }
+
+      }
+
+    }
+
+    #{&}__body {
+      margin: 0;
+      padding: 1rem 1.5rem;
+    }
+
+    #{&}__footer {
+      padding: 0 1.5rem 1rem;
+      text-align: right;
+    }
+
+  }
+
+}
