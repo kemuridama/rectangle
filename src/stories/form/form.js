@@ -10,32 +10,32 @@ export default class Form extends React.Component {
             <form className="form">
               <div className="form__header">
                 <p className="form__header__text">
-                  以下のフィールド全てに入力が必要です。
+                  Enter your information into below fields.
                 </p>
               </div>
               <div className="form__body">
                 <div className="input-field">
-                  <label className="input-field__label" htmlFor="textbox">テキストボックス <span className="lbl lbl--red">必須</span></label>
-                  <input type="text" className="textbox" id="textbox" placeholder="テキストボックス" />
+                  <label className="input-field__label" htmlFor="textbox">Text Box <span className="lbl lbl--red">Required</span></label>
+                  <input type="text" className="textbox" id="textbox" placeholder="Text Box" />
                 </div>
                 <div className="input-field">
-                  <label className="input-field__label">ラジオボタン</label>
+                  <label className="input-field__label">Radio Button</label>
                   <ul className="list list--inline">
-                    <li><label className="radio__label"><input type="radio" name="radio" className="radio" /> ラジオボタン 1</label></li>
-                    <li><label className="radio__label"><input type="radio" name="radio" className="radio" /> ラジオボタン 2</label></li>
+                    <li><label className="radio__label"><input type="radio" name="radio" className="radio" /> Radio Button 1</label></li>
+                    <li><label className="radio__label"><input type="radio" name="radio" className="radio" /> Radio Button 2</label></li>
                   </ul>
                 </div>
                 <div className="input-field">
-                  <label className="input-field__label">チェックボックス</label>
+                  <label className="input-field__label">Check Box</label>
                   <ul className="list list--inline">
-                    <li><label className="checkbox__label"><input type="checkbox" name="checkbox" className="checkbox" /> ラジオボタン 1</label></li>
-                    <li><label className="checkbox__label"><input type="checkbox" name="checkbox" className="checkbox" /> ラジオボタン 2</label></li>
+                    <li><label className="checkbox__label"><input type="checkbox" name="checkbox" className="checkbox" /> Check Box 1</label></li>
+                    <li><label className="checkbox__label"><input type="checkbox" name="checkbox" className="checkbox" /> Check Box 2</label></li>
                   </ul>
                 </div>
               </div>
               <div className="form__footer">
-                <button type="clear" className="btn btn--red-o">キャンセル</button>
-                <button type="submit" className="btn btn--green">送信</button>
+                <button type="clear" className="btn btn--red-o">Cancel</button>
+                <button type="submit" className="btn btn--green">Submit</button>
               </div>
             </form>
           </div>
