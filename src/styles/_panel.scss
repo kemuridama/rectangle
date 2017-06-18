@@ -9,6 +9,17 @@
 
   @at-root {
 
+    &--transparent {
+      border-color: transparent;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    &--without-border-top-and-bottom {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
     #{&}__header,
     #{&}__body,
     #{&}__footer {
@@ -19,6 +30,8 @@
     }
 
     #{&}__header {
+
+      position: relative;
 
       h1,
       h2,
@@ -43,6 +56,16 @@
           padding: 2rem 1.5rem;
         }
 
+        &__toolbox {
+          display: flex;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          padding: 0 1rem;
+          align-items: center;
+        }
+
       }
 
     }
@@ -53,6 +76,20 @@
 
         #{&}--without-padding {
           padding: 0;
+        }
+
+        &--flex {
+
+          display: flex;
+
+          @at-root {
+
+            &--vertical-center {
+              align-items: center;
+            }
+
+          }
+
         }
 
       }

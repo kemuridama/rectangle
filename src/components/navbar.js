@@ -25,7 +25,9 @@ export default class Navbar extends React.Component {
             <ul className="list list--inline list--without-margin">
               {menuList && menuList.filter(m => m.position != 'right').map((m, i) =>
                 <li key={i}>
-                  <a className="navbar__link" onClick={m.onClick}>{m.label}</a>
+                  {m.component ||
+                    <a className="navbar__link" onClick={m.onClick}>{m.label}</a>
+                  }
                 </li>
               )}
             </ul>
@@ -34,7 +36,9 @@ export default class Navbar extends React.Component {
             <ul className="list list--inline list--without-margin">
               {menuList && menuList.filter(m => m.position == 'right').map((m, i) =>
                 <li key={i}>
-                  <a className="navbar__link" onClick={m.onClick}>{m.label}</a>
+                  {m.component ||
+                    <a className="navbar__link" onClick={m.onClick}>{m.label}</a>
+                  }
                 </li>
               )}
             </ul>
