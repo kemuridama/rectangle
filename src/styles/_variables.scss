@@ -12,16 +12,16 @@ $breakpoints: (
 );
 
 // Colors
-$color-black: #000000;
-$color-white: #ffffff;
-$color-red: #eb3232;
-$color-blue: #0a6ee6;
-$color-green: #64be5a;
-$color-yellow: #feba40;
-$color-orange: #ff5028;
-$background-color: #f5f5f5;
-$border-color: #dbdde8;
-$outline-color: #1c92d2;
+$color-black: #000000 !default;
+$color-white: #ffffff !default;
+$color-red: #eb3232 !default;
+$color-blue: #0a6ee6 !default;
+$color-green: #64be5a !default;
+$color-yellow: #feba40 !default;
+$color-orange: #ff5028 !default;
+$background-color: #f5f5f5 !default;
+$border-color: #dbdde8 !default;
+$outline-color: #1c92d2 !default;
 
 // Button Colors
 $button-colors: (
