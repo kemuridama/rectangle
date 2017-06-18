@@ -26,6 +26,8 @@
 
     #{&}__header {
 
+      position: relative;
+
       h1,
       h2,
       h3,
@@ -47,6 +49,16 @@
 
         #{&}--with-large-padding {
           padding: 2rem 1.5rem;
+        }
+
+        &__toolbox {
+          display: flex;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          padding: 0 1rem;
+          align-items: center;
         }
 
       }
