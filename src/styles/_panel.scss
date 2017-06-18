@@ -73,6 +73,20 @@
           padding: 0;
         }
 
+        &--flex {
+
+          display: flex;
+
+          @at-root {
+
+            &--vertical-center {
+              align-items: center;
+            }
+
+          }
+
+        }
+
       }
 
     }
