@@ -25,6 +25,12 @@ export default class NavbarSample extends React.Component {
         position: 'left'
       },
       {
+        component: <a className="navbar__link" onClick={onClick.bind(this)}>
+          <i className="fa fa-flag fa-fw" /> with Component
+        </a>,
+        position: 'left'
+      },
+      {
         label: 'Login',
         onClick: onClick.bind(this),
         position: 'right'

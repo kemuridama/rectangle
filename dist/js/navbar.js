@@ -1223,7 +1223,7 @@ var Navbar = function (_React$Component) {
                 return _react2.default.createElement(
                   'li',
                   { key: i },
-                  _react2.default.createElement(
+                  m.component || _react2.default.createElement(
                     'a',
                     { className: 'navbar__link', onClick: m.onClick },
                     m.label
@@ -1244,7 +1244,7 @@ var Navbar = function (_React$Component) {
                 return _react2.default.createElement(
                   'li',
                   { key: i },
-                  _react2.default.createElement(
+                  m.component || _react2.default.createElement(
                     'a',
                     { className: 'navbar__link', onClick: m.onClick },
                     m.label
