@@ -45,6 +45,11 @@
 
       @at-root {
 
+        &--header {
+          font-weight: bold;
+          text-align: left;
+        }
+
         &--number { text-align: right; }
         &--text-left { text-align: left; }
         &--text-right { text-align: right; }
