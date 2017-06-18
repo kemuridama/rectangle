@@ -10,41 +10,41 @@ export default class NormalTable extends React.Component {
             <table className="tbl">
               <thead className="tbl__header">
                 <tr>
-                  <th>Head 1</th>
-                  <th>Head 2</th>
-                  <th>Head 3</th>
-                  <th>Head 4</th>
-                  <th>Head 5</th>
+                  <th className="tbl__col">Head 1</th>
+                  <th className="tbl__col">Head 2</th>
+                  <th className="tbl__col">Head 3</th>
+                  <th className="tbl__col">Head 4</th>
+                  <th className="tbl__col">Head 5</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Data 1</td>
-                  <td>Data 2</td>
-                  <td>Data 3</td>
-                  <td>Data 4</td>
-                  <td>Data 5</td>
+                  <td className="tbl__col">Data 1</td>
+                  <td className="tbl__col">Data 2</td>
+                  <td className="tbl__col">Data 3</td>
+                  <td className="tbl__col">Data 4</td>
+                  <td className="tbl__col">Data 5</td>
                 </tr>
                 <tr>
-                  <td>Data 1</td>
-                  <td>Data 2</td>
-                  <td>Data 3</td>
-                  <td>Data 4</td>
-                  <td>Data 5</td>
+                  <td className="tbl__col">Data 1</td>
+                  <td className="tbl__col">Data 2</td>
+                  <td className="tbl__col">Data 3</td>
+                  <td className="tbl__col">Data 4</td>
+                  <td className="tbl__col">Data 5</td>
                 </tr>
                 <tr>
-                  <td>Data 1</td>
-                  <td>Data 2</td>
-                  <td>Data 3</td>
-                  <td>Data 4</td>
-                  <td>Data 5</td>
+                  <td className="tbl__col">Data 1</td>
+                  <td className="tbl__col">Data 2</td>
+                  <td className="tbl__col">Data 3</td>
+                  <td className="tbl__col">Data 4</td>
+                  <td className="tbl__col">Data 5</td>
                 </tr>
                 <tr>
-                  <td>Data 1</td>
-                  <td>Data 2</td>
-                  <td>Data 3</td>
-                  <td>Data 4</td>
-                  <td>Data 5</td>
+                  <td className="tbl__col">Data 1</td>
+                  <td className="tbl__col">Data 2</td>
+                  <td className="tbl__col">Data 3</td>
+                  <td className="tbl__col">Data 4</td>
+                  <td className="tbl__col">Data 5</td>
                 </tr>
               </tbody>
             </table>
