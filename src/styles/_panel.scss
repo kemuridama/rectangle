@@ -9,6 +9,12 @@
 
   @at-root {
 
+    &--transparent {
+      border-color: transparent;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
     #{&}__header,
     #{&}__body,
     #{&}__footer {
