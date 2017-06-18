@@ -12,7 +12,7 @@
     "clean": "rm -rf ./dist && rm -rf ./storybook",
     "build": "npm run clean && npm run lint && webpack --config webpack.config.js",
     "lint": "eslint --ignore-path .gitignore src/**/*.js",
-    "storybook": "start-storybook -p 6001",
+    "storybook": "NODE_ENV=development BABEL_ENV=development start-storybook -p 6001",
     "build-storybook": "build-storybook -o storybook"
   },
   "devDependencies": {
