@@ -13,6 +13,7 @@ export default class ButtonColors extends React.Component {
             <button className="btn btn--green" onClick={onClick.bind(this)}>Green</button>
             <button className="btn btn--yellow" onClick={onClick.bind(this)}>Yellow</button>
             <button className="btn btn--orange" onClick={onClick.bind(this)}>Orange</button>
+            <button className="btn btn--white" onClick={onClick.bind(this)}>White</button>
           </div>
         </div>
       </div>

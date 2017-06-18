@@ -12,6 +12,7 @@ export default class LabelColors extends React.Component {
             <span className="lbl lbl--green">Green</span>
             <span className="lbl lbl--yellow">Yellow</span>
             <span className="lbl lbl--orange">Orange</span>
+            <span className="lbl lbl--white">White</span>
           </div>
         </div>
       </div>
